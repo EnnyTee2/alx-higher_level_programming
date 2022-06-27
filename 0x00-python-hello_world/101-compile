@@ -1,4 +1,4 @@
 #!/bin/bash
 export PYFILE=my_main.py
-python3 -m import my_main.py
-export PYFILEc=my_main.pyc
+python3 -m py_compile $PYFILE
+cp __pycache__/*.pyc $PYFILE"c"
