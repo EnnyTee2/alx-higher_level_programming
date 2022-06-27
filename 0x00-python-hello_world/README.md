@@ -1,3 +1,3 @@
 # 0x00. Python - Hello, World
 
-This folder contains simple introductory tasks into the Python Programming Language
+This directory contains simple introductory tasks into the Python Programming Language
