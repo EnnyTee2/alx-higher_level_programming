@@ -5,6 +5,8 @@ number = random.randint(-10000, 10000)
 def get_last(num):
     temp = str(num)
     last = int(temp[len(temp)-1])
+    if num < 0:
+        return last * -1
     return last
 last_num = get_last(number)
 if last_num > 5:
