@@ -2,7 +2,7 @@
 import random
 number = random.randint(-10000, 10000)
 # the get_last function below gets the last digit of the number
-def get_last(int num):
+def get_last(num):
     temp = str(num)
     last = int(temp[len(temp)-1])
     return last
