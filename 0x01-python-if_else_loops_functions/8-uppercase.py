@@ -5,5 +5,5 @@ def uppercase(str):
         if char.islower():
             temp += chr(ord(char)-32)
         else:
-            plc += char
+            temp += char
     print("{}".format(temp))
