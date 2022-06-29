@@ -6,4 +6,4 @@ def uppercase(str):
             temp += chr(ord(char)-32)
         else:
             plc += char
-    print("{}".format(temp)
+    print("{}".format(temp))
