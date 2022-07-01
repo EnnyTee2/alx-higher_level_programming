@@ -33,10 +33,7 @@ if __name__ == "__main__":
         print(f"Usage: {args[0]} <a> <operator> <b>")
         sys.exit(1)
 
-
-
 """Alternative code
-
 
     from calculator_1 import add, sub, mul, div
     import sys
