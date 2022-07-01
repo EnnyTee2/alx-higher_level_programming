@@ -5,7 +5,7 @@ if __name__ == "__main__":
     file calculator_1.py and handles basic operations."""
 
 
-    from calculator_1 import add, sub, mul, div
+    from calculator_1 import add,sub,mul,div
     import sys
 
     args = sys.argv
@@ -36,8 +36,8 @@ if __name__ == "__main__":
 
 
     """Alternative code
-    
-    
+
+
     from calculator_1 import add, sub, mul, div
     import sys
 
