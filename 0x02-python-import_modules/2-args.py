@@ -2,10 +2,12 @@
 
 if __name__ == "__main__":
     """This program prints the number of and the list of its arguments"""
-    import sys.argv as argv
+    import sys
 
+    argv = sys.argv
     index = 1
     counter = len(argv)
+
     if counter == 1:
         print("{} argument:".format(counter))
         print("{index}: {}".format(argv[counter - 1]))
