@@ -10,7 +10,7 @@ if __name__ == "__main__":
 
     if counter == 1:
         print("{} argument:".format(counter))
-        print("{index}: {}".format(argv[counter]))
+        print("{}: {}".format(index, argv[counter]))
     elif counter == 0:
         print("{} arguments.".format(counter))
     else:
