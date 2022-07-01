@@ -31,4 +31,36 @@ if __name__ == "__main__":
     else:
         print(f"Usage: {args[0]} <a> <operator> <b>")
         sys.exit(1)
-        
+
+
+
+    """Alternative code
+    
+    
+    from calculator_1 import add, sub, mul, div
+    import sys
+
+    args = sys.argv
+    operators = ['+', '-', '*', '/']
+    a = int(args[1])
+    op = args[2]
+    b = int(args[3])
+
+    if len(args) == 4:
+        if op not in operators:
+            print("Unknown operator. Available operators: +, -, * and /")
+            sys.exit(1)
+        else:
+            if op == '+':
+                print(f"{a} {op} {b} = {add(a, b)}")
+            elif op == '-':
+                print(f"{a} {op} {b} = {sub(a, b)}")
+            elif op == '*':
+                print(f"{a} {op} {b} = {mul(a, b)}")
+            else:
+                print(f"{a} {op} {b} = {div(a, b)}")
+            sys.exit(0)
+    else:
+        print(f"Usage: {args[0]} <a> <operator> <b>")
+        sys.exit(1)
+        """
