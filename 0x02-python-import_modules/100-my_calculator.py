@@ -29,6 +29,6 @@ if __name__ == "__main__":
                 print(f"{a} {op} {b} = {div(a, b)}")
             sys.exit(0)
     else:
-        print(f"Usage: ./{args[0]} <a> <operator> <b>")
+        print(f"Usage: {args[0]} <a> <operator> <b>")
         sys.exit(1)
         
