@@ -10,11 +10,12 @@ if __name__ == "__main__":
 
     args = sys.argv
     operators = ['+', '-', '*', '/']
-    a = int(args[1])
-    op = args[2]
-    b = int(args[3])
 
     if len(args) == 4:
+        a = int(args[1])
+        op = args[2]
+        b = int(args[3])
+
         if op not in operators:
             print("Unknown operator. Available operators: +, -, * and /")
             sys.exit(1)
