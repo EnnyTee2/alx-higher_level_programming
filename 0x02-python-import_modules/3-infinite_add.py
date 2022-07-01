@@ -15,5 +15,3 @@ if __name__ == "__main__":
         print(int(sys.argv[1]))
     else:
         print(0)
-        
-    
