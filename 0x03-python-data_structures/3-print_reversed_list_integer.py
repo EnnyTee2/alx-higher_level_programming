@@ -6,7 +6,7 @@ of a list, in reverse order."""
 
 def print_reversed_list_integer(my_list=[]):
     for integer in reversed(mylist):
-        print(integer)
+        print("{:d}".format(integer))
 
 """ Alternate method 
     count = len(my_list) - 1
