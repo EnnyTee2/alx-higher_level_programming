@@ -26,22 +26,22 @@ def add_tuple(tuple_a=(), tuple_b=()):
     else:
         try:
             a1 = tuple_a[0]
-        except:
-            pass
+        except Exception:
+            error += Exception 
         try:
             a2 = tuple_a[1]
-        except:
-            pass
+        except Exception:
+            error += Exception
     if len(tuple_b) > 1:
         b1 = tuple_b[0]
         b2 = tuple_b[1]
     else:
         try:
             b1 = tuple_b[0]
-        except:
-            pass
+        except Exception:
+            error += Exception 
         try:
             b2 = tuple_b[1]
-        except:
-            pass
+        except Exception:
+            error += Exception 
     return (a1 + b1, a2 + b2)
