@@ -3,19 +3,10 @@
 """a function that adds 2 tuples.""""
 
 
-def add_tuple(tuple_a=(), tuple_b=()):
-    for i in range(len(tuple_a)):
-        if i < 1:
-            try:
-                a1 = (tuple_a[i] + tuple_b[i])
-            except:
-                a1 = (tuple_a[i] + 0)
-        else:
-            try:
-                a2 = (tuple_a[i] + tuple_b[i])
-            except:
-                a2 = (tuple_a[i] + 0)
-    return (a1, a2)
+def add_tuple(tuple_a=(0,0), tuple_b=(0,0)):
+    res1 = (tuple_a[0] + tuple_b[0])
+    res2 = (tuple_a[1] + tuple_b[1])
+    return (res1, res2)
 
 
 
