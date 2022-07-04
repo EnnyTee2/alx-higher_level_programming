@@ -16,12 +16,26 @@ def add_tuple(tuple_a=(), tuple_b=()):
             tuple_b = tuple_b[0], 0
 
     return (tuple_a[0] + tuple_b[0], tuple_a[1] + tuple_b[1])"""
-    a1 = tuple_a[0]
-    a2 = tuple_a[1]
+
+
+    a1 = 0
+    a2 = 0
     b1 = 0
     b2 = 0
     len_a = len(tuple_a)
     len_b = len(tuple_b)
+    if len_a > 1:
+        a1 = tuple_a[0]
+        a2 = tuple_a[1]
+    else:
+        try:
+            a1 = tuple_a[0]
+        except:
+            pass
+        try:
+            a2 = tuple_a[1]
+        except:
+            pass
     if len_b > 1:
         b1 = tuple_b[0]
         b2 = tuple_b[1]
