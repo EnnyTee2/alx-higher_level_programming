@@ -20,6 +20,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
     a2 = 0
     b1 = 0
     b2 = 0
+    error = ''
     if len(tuple_a) > 1:
         a1 = tuple_a[0]
         a2 = tuple_a[1]
