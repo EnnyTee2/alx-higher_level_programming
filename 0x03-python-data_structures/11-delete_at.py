@@ -8,5 +8,5 @@ def delete_at(my_list=[], idx=0):
     try:
         del my_list[idx]
     except Exception:
-        pass#error = Exception
+        error = Exception
     return my_list
