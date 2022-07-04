@@ -45,5 +45,5 @@ def add_tuple(tuple_a=(), tuple_b=()):
             b2 = tuple_b[1]
         except Exception:
             error = Exception
-    del error   
+    del error
     return (a1 + b1, a2 + b2)
