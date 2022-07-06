@@ -12,4 +12,3 @@ def uniq_add(my_list=[]):
             empty.append(int(number))
             total += number
     return total
-    
