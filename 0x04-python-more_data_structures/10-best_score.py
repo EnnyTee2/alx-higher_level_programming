@@ -4,15 +4,12 @@
 
 
 def best_score(a_dictionary):
-    best_ = None
     if a_dictionary is None or len(a_dictionary) == 0:
-        return best_
+        return None
     best = sorted(list(a_dictionary.values()))[-1]
     for key in a_dictionary.keys():
         if a_dictionary[key] == best:
-            best_ = key
-            break
-    return best_
+            return key
 
 
 """try:
@@ -21,3 +18,16 @@ except Exception:
     error = Exception
     return None
 return best"""
+
+"""def best_score(a_dictionary):
+    """Returns a key with the biggest integer value."""
+    if not isinstance(a_dictionary, dict) or len(a_dictionary) == 0:
+        return None
+
+    ret = list(a_dictionary.keys())[0]
+    big = a_dictionary[ret]
+    for k, v in a_dictionary.items():
+        if v > big:
+            big = v
+            ret = k
+    return (ret)"""
