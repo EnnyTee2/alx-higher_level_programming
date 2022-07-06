@@ -8,7 +8,4 @@ def search_replace(my_list, search, replace):
     for index in range(len(my_list)):
         if my_list[index] == search:
             my_list[index] = replace
-            break
-        else:
-            continue
     return my_list
