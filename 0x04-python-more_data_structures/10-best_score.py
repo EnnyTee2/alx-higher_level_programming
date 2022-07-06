@@ -4,12 +4,13 @@
 
 
 def best_score(a_dictionary):
-    if a_dictionary == None:
+    if a_dictionary is None:
         return None
     best = sorted(list(a_dictionary.values()))[-1]
     for key in a_dictionary.keys():
         if a_dictionary[key] == best:
             return key
+
 
 """try:
     best = sorted(list(a_dictionary.values()))[-1]
