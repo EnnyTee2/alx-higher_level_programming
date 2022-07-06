@@ -4,9 +4,16 @@
 
 
 def best_score(a_dictionary):
-    try:
-        best = sorted(list(a_dictionary.values()))[-1]
-    except Exception:
-        error = Exception
+    if a_dictionary == None:
         return None
-    return best
+    best = sorted(list(a_dictionary.values()))[-1]
+    for key in a_dictionary.keys():
+        if a_dictionary[key] == best:
+            return key
+
+"""try:
+    best = sorted(list(a_dictionary.values()))[-1]
+except Exception:
+    error = Exception
+    return None
+return best"""
