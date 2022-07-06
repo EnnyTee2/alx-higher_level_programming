@@ -9,3 +9,4 @@ def search_replace(my_list, search, replace):
         if my_list[index] == search:
             my_list[index] = replace
             break
+    return my_list
