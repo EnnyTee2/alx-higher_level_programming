@@ -4,7 +4,7 @@
 
 
 def best_score(a_dictionary):
-    best = None
+    best_ = None
     if a_dictionary is None:
         return best_
     best = sorted(list(a_dictionary.values()))[-1]
