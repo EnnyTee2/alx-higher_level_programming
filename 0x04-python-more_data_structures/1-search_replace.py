@@ -5,7 +5,8 @@ of an element by another in a new list."""
 
 
 def search_replace(my_list, search, replace):
-    for index in range(len(my_list)):
-        if my_list[index] == search:
-            my_list[index] = replace
-    return my_list
+    new_list = my_list[:]
+    for index in range(len(new_list)):
+        if new_list[index] == search:
+            new_list[index] = replace
+    return new_list
