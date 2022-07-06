@@ -9,3 +9,7 @@ def number_keys(a_dictionary):
     for key in a_dictionary.keys():
         keys += 1
     return keys
+
+"""Alternatively the len keyword can be used
+to extract the number of keys:
+return len(a_dictionary.keys())"""
