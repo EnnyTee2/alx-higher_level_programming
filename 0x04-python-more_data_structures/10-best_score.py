@@ -4,4 +4,6 @@
 
 
 def best_score(a_dictionary):
+    if len(a_dictionary) == 0:
+        return None
     return sorted(list(a_dictionary.values()))[-1]
