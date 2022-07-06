@@ -5,7 +5,7 @@ average of all integers tuple (<score>, <weight>)"""
 
 
 def weight_average(my_list=[]):
-    if my_list = []:
+    if len(my_list) == 0:
         return 0
     wa_sum = 0
     div = 0
