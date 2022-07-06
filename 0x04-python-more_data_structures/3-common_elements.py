@@ -5,5 +5,4 @@ of common elements in two sets."""
 
 
 def common_elements(set_1, set_2):
-    union_set = set_1 & set_2
-    return union_set
+    return set_1 & set_2
