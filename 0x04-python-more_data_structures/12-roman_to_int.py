@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# Trust Eniola [trusteniola@gmail.com]
 
 """a function that converts a Roman numeral to an integer."""
 
