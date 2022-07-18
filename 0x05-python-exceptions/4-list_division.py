@@ -7,13 +7,13 @@ def list_division(my_list_1, my_list_2, list_length):
     new_list = []
     for i in range(0, list_length):
         try:
-           div = my_list_1[i] / my_list_2[i]
+            div = my_list_1[i] / my_list_2[i]
         except Exception as e:
-            if isinstance(e, ZeroDivisionError) == True:
+            if isinstance(e, ZeroDivisionError) is True:
                 print("division by 0")
-            elif isinstance(e, TypeError) == True:
+            elif isinstance(e, TypeError) is True:
                 print("wrong type")
-            elif isinstance(e, IndexError) == True:
+            elif isinstance(e, IndexError) is True:
                 print("out of range")
             div = 0
         finally:
