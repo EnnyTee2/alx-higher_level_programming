@@ -23,7 +23,7 @@ def area(self): that returns the current square area"""
         return self.__size * self.__size
     @property
     def size(self):
-        return self._size
+        return self.__size
     @size.setter
     def size(self, value):
         if type(value) is int:
