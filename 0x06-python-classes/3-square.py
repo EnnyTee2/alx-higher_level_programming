@@ -22,4 +22,4 @@ def area(self): that returns the current square area"""
         else:
              raise TypeError("size must be an integer")
     def area(self):
-        return self.size ** self.size
+        return self.size * self.size
