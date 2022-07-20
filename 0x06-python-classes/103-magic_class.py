@@ -4,7 +4,7 @@
 the same as the given Python bytecode"""
 
 
-importh math
+import math
 
 
 class MagicClass:
