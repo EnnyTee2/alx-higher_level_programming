@@ -6,6 +6,14 @@ and a properties which are accessed and changed
 by getters and setters respectively"""
 
 
+#!/usr/bin/python3
+
+"""a class Square that defines a
+square (based on 5-square.py) with private instance attributes
+and a properties which are accessed and changed
+by getters and setters respectively"""
+
+
 class Square:
     """"
     Square (class): creates a square with the size specified by
@@ -77,5 +85,15 @@ class Square:
                 print("\n" * self.__position[1], end="")
             for i in range(self.__size):
                 print(" " * self.__position[0] + "#" * self.__size)
+
     def __str__(self):
-        return my_print(self)
+        if self.__size == 0:
+            return ''
+        else:
+            [print("") for i in range(0, self.__position[1])]
+        for i in range(0, self.__size):
+            [print(" ", end="") for j in range(0, self.__position[0])]
+            [print("#", end="") for k in range(0, self.__size)]
+            if i != self.__size - 1:
+                print("")
+        return ''
