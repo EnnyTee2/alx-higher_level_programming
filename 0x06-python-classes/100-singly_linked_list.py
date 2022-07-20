@@ -59,13 +59,13 @@ class SinglyLinkedList:
     def __init__(self, data=None):
         self.__head = None
         self.__tail = None
- 
+
         if data is not None:
             self.sorted_insert(data)
 
     def sorted_insert(self, value):
         if self.__head is None:
-            self.__tail = self.__head = Node(value) 
+            self.__tail = self.__head = Node(value)
         else:
             self.__tail.next_node = Node(value)
             self.__tail = self.__tail.next_node
