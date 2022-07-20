@@ -40,38 +40,30 @@ class Square:
         else:
             raise TypeError("size must be a number")
     
-    def __gt__(self, other):
-        if (self.__size > other.__size):
-            return True
-        else:
-            return False
-
-    def __lt__(self, other):
-         if (self.__size < other.__size):
-            return True
-        else:
-            return False
+    def area(self):
+        """Return the current area of the square."""
+        return (self.__size * self.__size)
 
     def __eq__(self, other):
-         if (self.__size == other.__size):
-            return True
-        else:
-            return False
+        """Define the == comparision to a Square."""
+        return self.area() == other.area()
 
     def __ne__(self, other):
-         if (self.__size != other.__size):
-            return True
-        else:
-            return False
+        """Define the != comparison to a Square."""
+        return self.area() != other.area()
 
-    def __ge__(self, other):
-         if (self.__size >= other.__size):
-            return True
-        else:
-            return False
+    def __lt__(self, other):
+        """Define the < comparison to a Square."""
+        return self.area() < other.area()
 
     def __le__(self, other):
-         if (self.__size <= other.__size):
-            return True
-        else:
-            return False
+        """Define the <= comparison to a Square."""
+        return self.area() <= other.area()
+
+    def __gt__(self, other):
+        """Define the > comparison to a Square."""
+        return self.area() > other.area()
+
+    def __ge__(self, other):
+        """Define the >= compmarison to a Square."""
+        return self.area() >= other.area()
