@@ -6,6 +6,18 @@ and a properties which are accessed and changed
 by getters and setters respectively"""
 
 
+def checker(items):
+    """Global function to check if the elements in a tuple
+    conform with specific requirements"""
+    
+        for elem in items:
+                if (type(elem) is int) and (elem >= 0):
+                    status = True
+                    continue
+                else:
+                    status = False
+                    break
+        return status
 
 class Square:
     """"
@@ -40,12 +52,12 @@ class Square:
     @property
     def position(self):
         return self.__position
-
+ 
     @position.setter
     def position(self, value):
         if (type(value) is tuple and len(value) == 2):
-            if (value[0] >= 0 and value[1] >= 0):
-                self.__position = value
+            if checker(value) is True
+                    self.__position = value
             else:
                 raise TypeError("position must be a tuple of 2 positive integers")
         else:
@@ -63,8 +75,11 @@ class Square:
         if self.__size == 0:
             print()
         else:
-            for i in range(self.__size):
-                if self.__position[1] > 0:
-                    print("_" * self.__position[0] + "#" * self.__size)
-                else:
+            if self.__position[1] > 0:
+                for i in range(self.__position[1]):
+                    print()
+                for i in range(self.__size):
+                    print("_" * self.__position[0] + "#" * self.__size) 
+            else:
+                for i in range(self.__size):
                     print(" " * self.__position[0] + "#" * self.__size)
