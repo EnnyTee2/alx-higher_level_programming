@@ -13,7 +13,7 @@ class MagicClass:
     (1): Init constructor with an optional parameter radius
     (2): area: calculates the area
     (3): circumference: that calculates the circumference 
-    """"
+    """
 
     def __init__(self, radius=0):
         
