@@ -39,7 +39,7 @@ class Square:
             self.__size = value
         else:
             raise TypeError("size must be a number")
-    
+
     def area(self):
         """Return the current area of the square."""
         return (self.__size * self.__size)
