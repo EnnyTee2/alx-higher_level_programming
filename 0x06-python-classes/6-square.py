@@ -28,7 +28,6 @@ class Square:
     def checker(self, items):
         """method to check if the elements in a tuple
         conform with specific requirements"""
-
         status = False
         if (type(items) is tuple and len(items) == 2):
             for elem in items:
@@ -66,21 +65,16 @@ class Square:
 
     def area(self):
         """Calculates area of the square and return the result"""
-
         return self.__size * self.__size
 
     def my_print(self):
         """ Prints the square with the character # to the stdout
         depending on the position specified"""
-
         if self.__size == 0:
             print()
         else:
             if self.__position[1] > 0:
                 for i in range(self.__position[1]):
                     print()
-                for i in range(self.__size):
-                    print("_" * self.__position[0] + "#" * self.__size)
-            else:
-                for i in range(self.__size):
-                    print(" " * self.__position[0] + "#" * self.__size)
+            for i in range(self.__size):
+                print(" " * self.__position[0] + "#" * self.__size)
