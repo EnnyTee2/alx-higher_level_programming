@@ -16,6 +16,7 @@ class Square:
         position(): specifies a tuple containing square pos
         area(): returns the area of the square.
         my_print(): prints out the square with # character to stdout.
+        checker(tuple): checks a tuple for conformity
     Args:
         size (int): size of the square.
     """
@@ -60,8 +61,7 @@ class Square:
             if self.checker(value) is True:
                 self.__position = value
             else:
-                raise TypeError("""position must be a
-                tuple of 2 positive integers""")
+                raise TypeError("""position must be a tuple of 2 positive integers""")
         else:
             raise TypeError("position must be a tuple of 2 positive integers")
 
