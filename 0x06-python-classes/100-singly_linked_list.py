@@ -22,7 +22,7 @@ class Node:
 
     @property
     def data(self):
-        return [node.__data for node in self]
+        return self.__data
 
     @data.setter
     def data(self, value):
@@ -37,7 +37,7 @@ class Node:
 
     @next_node.setter
     def next_node(self, value):
-        if (value is None) or (isinstance(value, self) is True):
+        if (value is None) or (isinstance(value, Node) is True):
             self.__next_node = value
         else:
             raise TypeError('next_node must be a Node object')
@@ -55,33 +55,21 @@ class SinglyLinkedList:
         sorted_insert (): method that inserts new nodes into
         the proper sorted position in the SLL (ascending order)
     """
-    
+
     def __init__(self, data=None):
         self.__head = None
         self.__tail = None
-        if data != None:
+ 
+        if data is not None:
             self.sorted_insert(data)
 
     def sorted_insert(self, value):
-        if self.__head == None:
-            self.__head = self.__tail = Node(value) 
+        if self.__head is None:
+            self.__tail = self.__head = Node(value) 
         else:
             self.__tail.next_node = Node(value)
-            self.__tail = self.tail.next_node
+            self.__tail = self.__tail.next_node
         return self.__tail
-
-    def list_gen(self):
-        it = [node for node in self]
-        return it
-
-    def recurs(self, lis):
-        if len(lis) != 0:
-            self.recurs(lis)
-        return lis.pop()
-
-    def __str__(self):
-        for node in self:
-            print(node)
 
     def __len__(self):
         count = 0
@@ -91,8 +79,12 @@ class SinglyLinkedList:
             node = node.next_node
         return count
 
-    def __iter__(self):
-        current = self.__head
-        while current:
-            yield current
-            current = current.next
+    def __str__(self):
+        """Define the print() representation of a SinglyLinkedList."""
+        values = []
+        tmp = self.__head
+        while tmp is not None:
+            values.append(tmp.data)
+            tmp = tmp.next_node
+        v = [str(val) for val in sorted(values)]
+        return ('\n'.join(v))
