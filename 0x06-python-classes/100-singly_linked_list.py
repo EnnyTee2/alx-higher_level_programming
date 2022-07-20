@@ -14,8 +14,6 @@ class Node:
         data (int): specifies the data
         next_node(): specifies the next node in the SLL
     """
-
-
     def __init__(self, data, next_node=None):
         self.data = data
         self.next_node = next_node
