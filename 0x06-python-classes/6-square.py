@@ -25,8 +25,8 @@ class Square:
         self.position = position
 
     def checker(self, items):
-    """method to check if the elements in a tuple
-    conform with specific requirements"""
+        """method to check if the elements in a tuple
+        conform with specific requirements"""
     
         for elem in items:
                 if (type(elem) is int) and (elem >= 0):
