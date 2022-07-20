@@ -1,17 +1,16 @@
 #!/usr/bin/python3
 
-"""a class Square that defines a
-square (based on 5-square.py) with private instance attributes
-and a properties which are accessed and changed
-by getters and setters respectively"""
+"""
+a class Square that defines a
+square (based on 6-square.py) with private instance attributes
+and properties which are accessed and changed
+by getters and setters respectively
 
+It is required that the print function call on the class Square
+should mimick the function of the my_print() method as previously
+implemented
 
-#!/usr/bin/python3
-
-"""a class Square that defines a
-square (based on 5-square.py) with private instance attributes
-and a properties which are accessed and changed
-by getters and setters respectively"""
+"""
 
 
 class Square:
