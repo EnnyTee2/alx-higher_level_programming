@@ -29,13 +29,15 @@ class Square:
         """method to check if the elements in a tuple
         conform with specific requirements"""
 
-        for elem in items:
-            if (type(elem) is int) and (elem >= 0):
-                status = True
-                continue
-            else:
-                status = False
-                break
+        status = False
+        if (type(items) is tuple and len(items) == 2):
+            for elem in items:
+                if (type(elem) is int) and (elem >= 0):
+                    status = True
+                    continue
+                else:
+                    status = False
+                    break
         return status
 
     @property
@@ -57,13 +59,10 @@ class Square:
 
     @position.setter
     def position(self, value):
-        if (type(value) is tuple and len(value) == 2):
-            if self.checker(value) is True:
-                self.__position = value
-            else:
-                raise TypeError("""position must be a tuple of 2 positive integers""")
+        if self.checker(value) is True:
+            self.__position = value
         else:
-            raise TypeError("position must be a tuple of 2 positive integers")
+            raise TypeError("""position must be a tuple of 2 positive integers""")
 
     def area(self):
         """Calculates area of the square and return the result"""
