@@ -56,7 +56,7 @@ class Square:
     @position.setter
     def position(self, value):
         if (type(value) is tuple and len(value) == 2):
-            if self.checker(value) is True
+            if self.checker(value) == True
                     self.__position = value
             else:
                 raise TypeError("position must be a tuple of 2 positive integers")
