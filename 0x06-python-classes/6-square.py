@@ -6,19 +6,6 @@ and a properties which are accessed and changed
 by getters and setters respectively"""
 
 
-def checker(items):
-    """Global function to check if the elements in a tuple
-    conform with specific requirements"""
-    
-        for elem in items:
-                if (type(elem) is int) and (elem >= 0):
-                    status = True
-                    continue
-                else:
-                    status = False
-                    break
-        return status
-
 class Square:
     """"
     Square (class): creates a square with the size specified by
