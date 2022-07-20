@@ -4,6 +4,9 @@
 the same as the given Python bytecode"""
 
 
+importh math
+
+
 class MagicClass:
     """
     This class contains 3 methods:
@@ -14,7 +17,7 @@ class MagicClass:
     _MagicClass__radius = 0
     
     def __init__(self, radius=0):
-        if type(radius) is not int or type(radius) is not float:
+        if type(radius) is not int and type(radius) is not float:
             raise TypeError('radius must be a number')
         else:
             self._MagicClass__radius = radius
