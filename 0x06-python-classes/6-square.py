@@ -61,7 +61,7 @@ class Square:
         if self.checker(value) is True:
             self.__position = value
         else:
-            raise TypeError("""position must be a tuple of 2 positive integers""")
+            raise TypeError('position must be a tuple of 2 positive integers')
 
     def area(self):
         """Calculates area of the square and return the result"""
