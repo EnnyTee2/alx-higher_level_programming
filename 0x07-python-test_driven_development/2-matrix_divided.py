@@ -17,6 +17,8 @@ def matrix_divided(matrix, div):
     """
     if div == 0:
         raise(TypeError("division by zero"))
+    elif type(div) != int or type(div) != float:
+        raise TypeError("div must be a number")
     elif len(matrix) < 2:
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
     else:
