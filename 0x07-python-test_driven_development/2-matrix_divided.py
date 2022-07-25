@@ -11,7 +11,7 @@ def matrix_divided(matrix, div):
         TypeError: if matrix is not a list of lists of integers or floats
         TypeError: if div is not a number (integer or float)
         ZeroDivisionError: if div is equal to 0
-   """
+    """
     if div == 0:
         raise(TypeError("division by zero"))
     elif len(matrix) < 2:
@@ -30,4 +30,4 @@ def matrix_divided(matrix, div):
                         new_matrix[x][y] = round((matrix[x][y]/div), 2)
                     else:
                         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
-   return new_matrix
+    return new_matrix
