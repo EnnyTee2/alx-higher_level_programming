@@ -4,7 +4,7 @@
 
 def matrix_divided(matrix, div):
     """Returns a new matrix that contains elements
-    which are dividends of the division by the argument passed - div
+    which are dividends of the division by the argument passed (div)
     
     Raises:
         TypeError: if each row of the matrix is not of the same size
