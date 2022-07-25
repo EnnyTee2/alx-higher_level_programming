@@ -6,6 +6,9 @@ def matrix_divided(matrix, div):
     """Returns a new matrix that contains elements
     which are dividends of the division by the argument passed (div)
     
+    All elements of the matrix are divided by div and
+    rounded to 2 decimal places
+    
     Raises:
         TypeError: if each row of the matrix is not of the same size
         TypeError: if matrix is not a list of lists of integers or floats
