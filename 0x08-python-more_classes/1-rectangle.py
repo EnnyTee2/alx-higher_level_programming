@@ -11,15 +11,15 @@ class Rectangle:
         width (int): specify the width of the rectangle.
         height (int): specifies the height of the rectangle
     """
-    
+
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
-    
+
     @property
     def width(self):
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         if type(value) is not int:
@@ -28,10 +28,11 @@ class Rectangle:
             if value < 0:
                 raise ValueError("width must be >= 0")
             self.__width = value
+ 
     @property
     def height(self):
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         if type(value) is not int:
