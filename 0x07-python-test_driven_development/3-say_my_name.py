@@ -5,9 +5,9 @@
 def say_my_name(first_name, last_name=""):
     """prints the fullname as a combination of
     Firstname and Last name.
-    
+
     cocantenates first name and last name
-    
+
     Raises:
         TypeError: if first_name or last_name is not a string
     """
