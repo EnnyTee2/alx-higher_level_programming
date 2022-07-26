@@ -4,9 +4,9 @@
 
 def print_square(size):
     """prints the square of length size, with character #.
-    
+
     size must be greater than 0
-    
+
     Raises:
         TypeError: if size is not an integer
         ValueError: if size is less than 0
