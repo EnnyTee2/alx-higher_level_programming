@@ -21,11 +21,6 @@ class Rectangle:
         self.__height = height
         type(self).number_of_instances += 1
 
-    def __del__(self):
-        """rectangle class destructor"""
-        print("Bye rectangle...")
-        type(self).number_of_instances -= 1
-
     @property
     def width(self):
         return self.__width
@@ -89,3 +84,8 @@ class Rectangle:
         rect = "Rectangle(" + str(self.__width)
         rect += ", " + str(self.__height) + ")"
         return (rect)
+
+    def __del__(self):
+        """rectangle class destructor"""
+        print("Bye rectangle...")
+        type(self).number_of_instances -= 1
