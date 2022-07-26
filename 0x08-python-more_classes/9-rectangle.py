@@ -95,5 +95,6 @@ class Rectangle:
 
     def __del__(self):
         """rectangle class destructor"""
-        print("Bye rectangle...")
+        
         type(self).number_of_instances -= 1
+        print("Bye rectangle...")
