@@ -36,8 +36,8 @@ def matrix_divided(matrix, div):
             else:
                 for y in range(0, len(matrix[x])):
                     if (type(matrix[x][y]) == int or
-                        type(matrix[x][y]) == float):
-                            new_matrix[x][y] = round((matrix[x][y]/div), 2)
+                      type(matrix[x][y]) == float):
+                        new_matrix[x][y] = round((matrix[x][y]/div), 2)
                     else:
                         raise TypeError("matrix must be a matrix"
                                         "(list of lists) of integers/floats")
