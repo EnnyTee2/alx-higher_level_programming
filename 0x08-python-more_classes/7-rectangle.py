@@ -14,7 +14,7 @@ class Rectangle:
         Perimeter: returns the perimeter of the rectangle
     """
     number_of_instances = 0
-    print_symbol = '#'
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         self.__width = width
@@ -68,7 +68,7 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
         for x in range(0, self.__height):
-            [print(type(self).print_symbol, end="") for y in range(0, self.__width)]
+            [print(self.print_symbol, end="") for y in range(0, self.__width)]
             if x != self.__height - 1:
                 print("")
         return ""
