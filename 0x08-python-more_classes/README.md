@@ -1,6 +1,6 @@
 # 0x08. Python - More Classes and Objects
 
-Why Python programming is awesome
+Why Python programming is awesome\n
 What is OOP
 “first-class everything”
 What is a class
