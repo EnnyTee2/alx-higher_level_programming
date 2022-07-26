@@ -71,7 +71,7 @@ class Rectangle:
         Args:
             size (int): The width and height of the new Rectangle.
         """
-        return cls(size, size)
+        return Rectangle(size, size)
 
     def __str__(self):
         """Returns the printable representation of the Rectangle.
