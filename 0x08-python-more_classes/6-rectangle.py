@@ -18,12 +18,12 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         self.__width = width
         self.__height = height
-        self.number_of_instances += 1
+        type(self).number_of_instances += 1
 
     def __del__(self):
         """rectangle class destructor"""
         print("Bye rectangle...")
-        self.number_of_instances -= 1
+        type(self).number_of_instances -= 1
 
     @property
     def width(self):
