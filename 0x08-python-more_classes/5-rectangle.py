@@ -18,7 +18,8 @@ class Rectangle:
         self.__width = width
         self.__height = height
 
-    def  __del__(self):
+    def __del__(self):
+        """rectangle class destructor"""
         print("Bye rectangle...")
 
     @property
