@@ -53,7 +53,7 @@ class Rectangle:
     def perimeter(self):
         if self.__width == 0 or self.__height == 0:
             return 0
-        return 2 * (self.__height + self.__width)
+        return 2 * self.__height + 2 * self.__width
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
