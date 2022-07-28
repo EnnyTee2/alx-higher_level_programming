@@ -51,6 +51,6 @@ def matrix_divided(matrix, div):
                        type(matrix[x][y]) == float:
                         new_matrix[x][y] = round((matrix[x][y]/div), 2)
                     else:
-                        raise TypeError("matrix must be a matrix"
-                                        "(array of arrays of integers/floats)")
+                        raise TypeError("matrix must be a matrix "
+                                        "(lists of lists) of integers/floats)")
     return new_matrix
