@@ -37,11 +37,11 @@ def matrix_divided(matrix, div):
                                 "(list of lists) of integers/floats")
 
     else:
-        length = len(matrix[0])
-        if length < 1 or not isinstance(matrix[0], list):
+        if not isinstance(matrix[0], list):
             raise TypeError("matrix must be a matrix "
                                 "(list of lists) of integers/floats")
-        new_matrix = [matrix[:] for matrix in matrix]
+        length = len(matrix[0])
+        new_matrix = [matrix[:] for matrix in matrix if isinstance(matrix, list)]
         for x in range(0, len(matrix)):
             if isinstance(matrix[x], list) is False:
                 raise TypeError("matrix must be a matrix "
