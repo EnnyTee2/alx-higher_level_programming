@@ -5,23 +5,35 @@
 def matrix_divided(matrix, div):
     """Returns a new matrix that contains elements
     which are dividends of the division by the argument passed (div)
-
     All elements of the matrix are divided by div and
     rounded to 2 decimal places
-
     Raises:
         TypeError: if each row of the matrix is not of the same size
         TypeError: if matrix is not a list of lists of integers or floats
         TypeError: if div is not a number (integer or float)
         ZeroDivisionError: if div is equal to 0
     """
-    if div == 0:
-        raise(TypeError("division by zero"))
-    elif type(div) != int or type(div) != float:
+    if type(div) != int and type(div) != float:
         raise TypeError("div must be a number")
-    elif len(matrix) < 2:
-        raise TypeError("matrix must be a matrix "
-                        "(list of lists) of integers/floats")
+    else:
+        if div == 0:
+            raise(TypeError("division by zero"))
+
+    if len(matrix) < 2:
+        if len(matrix) == 0:
+            raise TypeError("matrix must be a matrix "
+                            "(list of lists) of integers/floats")
+        elif len(matrix) == 1:
+            new_matrix = [matrix[:] for matrix in matrix]
+            if isinstance(matrix[0], list) is False:
+                raise TypeError("matrix must be a matrix "
+                                "(list of lists) of integers/floats")
+            else:
+                for y in range(0, len(matrix[0])):
+                    if type(matrix[0][y]) == int or\
+                       type(matrix[0][y]) == float:
+                        new_matrix[0][y] = round((matrix[0][y]/div), 2)
+        
     else:
 
         length = len(matrix[0])
