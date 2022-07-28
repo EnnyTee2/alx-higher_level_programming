@@ -12,7 +12,7 @@ def add_integer(a, b=98):
     """
     if type(a) is int and type(b) is int:
         return a + b
-    elif type(a) is float or type(b) is float:
+    elif type(a) is float and type(b) is float:
         return int(a) + int(b)
     else:
         if type(a) is not int and type(a) is not float:
