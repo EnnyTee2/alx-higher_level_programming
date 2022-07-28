@@ -15,7 +15,7 @@ def matrix_divided(matrix, div):
     """
 
     t_error = TypeError("matrix must be a matrix "
-                                "(list of lists) of integers/floats")
+                        "(list of lists) of integers/floats")
     if type(div) != int and type(div) != float:
         raise TypeError("div must be a number")
     if div == 0:
@@ -31,7 +31,7 @@ def matrix_divided(matrix, div):
             new_matrix = [matrix[:] for matrix in matrix]
             for y in range(0, len(matrix[0])):
                 if type(matrix[0][y]) == int or\
-                    type(matrix[0][y]) == float:
+                   type(matrix[0][y]) == float:
                     new_matrix[0][y] = round((matrix[0][y]/div), 2)
                 else:
                     raise t_error
@@ -40,7 +40,7 @@ def matrix_divided(matrix, div):
         if not isinstance(matrix[0], list):
             raise t_error
         length = len(matrix[0])
-        new_matrix = [matrix[:] for matrix in matrix if isinstance(matrix, list)]
+        new_matrix = [matrix[:] for matrix in matrix if type(matrix) == list]
         for x in range(0, len(matrix)):
             if not isinstance(matrix[x], list):
                 raise t_error
