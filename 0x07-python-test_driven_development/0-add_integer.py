@@ -4,9 +4,7 @@
 
 def add_integer(a, b=98):
     """Returns the integer addition of a and b.
-
     Float arguments are typecasted to ints before addition is performed.
-
     Raises:
         TypeError: If either of a or b is a non-integer and non-float.
     """
@@ -19,3 +17,4 @@ def add_integer(a, b=98):
             raise TypeError("a must be an integer")
         elif type(b) is not int and type(b) is not float:
             raise TypeError("b must be an integer")
+        return int(a) + int(b)
