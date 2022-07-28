@@ -35,14 +35,13 @@ def matrix_divided(matrix, div):
                         new_matrix[0][y] = round((matrix[0][y]/div), 2)
         
     else:
-
         length = len(matrix[0])
         new_matrix = [matrix[:] for matrix in matrix]
         for x in range(0, len(matrix)):
             if isinstance(matrix[x], list) is False:
                 raise TypeError("matrix must be a matrix "
                                 "(list of lists) of integers/floats")
-            elif len(matrix[x]) != length:
+            if len(matrix[x]) != length:
                 raise(TypeError("Each row of matrix "
                                 "must have the same size"))
             else:
