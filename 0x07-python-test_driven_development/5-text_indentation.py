@@ -21,8 +21,7 @@ def text_indentation(text):
             cont.append(temp)
             temp = ''
     cont.append(temp)
-    ape = [tex.lstrip() for tex in cont]
-    final = [tex.rstrip() for tex in ape]
+    final = [tex.lstrip() for tex in cont]
     last = final[-1:]
     for each in final:
         if each == last[0]:
