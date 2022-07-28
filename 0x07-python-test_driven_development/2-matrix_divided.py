@@ -25,7 +25,7 @@ def matrix_divided(matrix, div):
         if len(matrix) == 0:
             raise TypeError("matrix must be a matrix "
                             "(list of lists) of integers/floats")
-        if len(matrix) == 1 and len(matrix[0] > 0):
+        if len(matrix) == 1 and len(matrix[0]) > 0:
             new_matrix = [matrix[:] for matrix in matrix]
             if isinstance(matrix[0], list) and len(matrix[0]) > 0:
                 for y in range(0, len(matrix[0])):
