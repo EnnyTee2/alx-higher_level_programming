@@ -3,6 +3,6 @@
 class BaseGeometry:
     
     def __init__(self):
-        return area()
+        return self.area()
     def area(self):
         raise Exception("area() is not implemented")
