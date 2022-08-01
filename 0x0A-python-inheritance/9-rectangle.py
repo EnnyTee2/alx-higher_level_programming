@@ -7,10 +7,10 @@ BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 class Rectangle(BaseGeometry):
     """
-    Full rectangle implementation
-    Args: 
+        Full rectangle implementation
+        Args: 
         width - width of rectangle
-        height - height of rectangle
+            height - height of rectangle
     """
 
     def __init__(self, width, height):
