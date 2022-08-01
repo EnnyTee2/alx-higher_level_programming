@@ -4,8 +4,7 @@
 
 class BaseGeometry:
     """ area: this method returns the area
-        integer_validator: validates the integer
-    """
+        integer_validator: validates the integer"""
 
     def area(self):
         raise Exception("area() is not implemented")
