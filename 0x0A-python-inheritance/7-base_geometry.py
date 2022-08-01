@@ -3,7 +3,7 @@
 
 
 class BaseGeometry:
-    """ area: this method returns the area
+    """ area: this method raises an exception
         integer_validator: validates the integer"""
 
     def area(self):
