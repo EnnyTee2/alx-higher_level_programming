@@ -1,6 +1,6 @@
 # 0x0B. Python - Input/Output
 
-## This directory contains:
+## This directory contains various tasks on:
 
 * How to open a file
 * How to write text in a file
