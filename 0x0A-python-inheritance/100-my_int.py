@@ -7,7 +7,7 @@ class MyInt(int):
 
     def __ne__(self, value):
         """override parent __neq__ method"""
-        super().__neq__(value)
+        super().__ne__(value)
         return self == value
 
     def __eq__(self, value):
