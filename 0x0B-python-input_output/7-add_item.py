@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-"""#!/usr/bin/python3
 
-a script that adds all arguments to a
-Python list, and then save them to a file:
+"""a script that adds all arguments to a
+Python list, and then save them to a file:"""
 import sys
 
 
@@ -20,7 +19,11 @@ if __name__ == "__main__":
             save_to_json_file(self.arg_list, filename)
 
             self.arg_list = load_from_json_file(filename)
-    a = Run()"""
+    a = Run()
+
+
+
+"""ALTERNATE METHOD
 import os
 import sys
 import json
@@ -40,4 +43,4 @@ if args > 1:
     data = load_from_json_file(filename)
     for i in range(1, args):
         data.append(sys.argv[i])
-    save_to_json_file(data, filename)
+    save_to_json_file(data, filename)"""
