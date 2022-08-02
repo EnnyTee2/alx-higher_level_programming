@@ -7,6 +7,6 @@ import json
 
 def save_to_json_file(my_obj, filename):
     """returns the object from its json representation of the string"""
-    js_file = json.dumps(my_obj)
+    js_file = json.dump(my_obj)
     with open(filename, 'w', encoding="utf-8") as myfile:
         js_data = myfile.write(js_file)
