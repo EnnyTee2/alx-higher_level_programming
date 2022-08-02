@@ -21,8 +21,6 @@ if __name__ == "__main__":
             self.arg_list = load_from_json_file(filename)
     a = Run()
 
-
-
 """ALTERNATE METHOD
 import os
 import sys
