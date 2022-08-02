@@ -5,12 +5,10 @@
 class MyInt(int):
     """this clas has its neq and eq operators inverted"""
 
-    def __ne__(self, other):
-        """override parent __neq__ method"""
-        super().__ne__(other)
-        return int(self) == other
+    def __ne__(self, val):
+        """override parent __ne__ method"""
+        return self.real == val
 
-    def __eq__(self, other):
+    def __eq__(self, val):
         """override parent __eq__ method"""
-        super().__eq__(other)
-        return int(self) != other
+        return self.real != val
