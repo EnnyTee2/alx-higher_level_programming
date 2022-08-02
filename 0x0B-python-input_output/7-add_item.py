@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """#!/usr/bin/python3
 
 a script that adds all arguments to a
@@ -20,10 +21,9 @@ if __name__ == "__main__":
 
             self.arg_list = load_from_json_file(filename)
     a = Run()
-"""
-#!/usr/bin/python3
-"""Add all arguments to a Python list and save them to a file."""
+Add all arguments to a Python list and save them to a file."""
 import sys
+
 
 if __name__ == "__main__":
     save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
