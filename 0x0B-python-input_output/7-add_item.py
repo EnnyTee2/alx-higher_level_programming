@@ -9,11 +9,13 @@ if __name__ == "__main__":
     save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
     load_from_json_file = \
         __import__('6-load_from_json_file').load_from_json_file
-
-    filename = "add_item.json"
-    try:
-        items = load_from_json_file(filename)
-    except FileNotFoundError:
-        items = []
-    items.extend(sys.argv[1:])
-    save_to_json_file(items, filename)
+    
+    class Run:
+        arg_list = []
+        def __init__(self):
+            self.arg_list.extend(sys.argv[1:])
+            filename = "add_item.json"
+            save_to_json_file(self.arg_list, filename)
+            
+            self.arg_list = load_from_json_file(filename)
+    a = Run()
