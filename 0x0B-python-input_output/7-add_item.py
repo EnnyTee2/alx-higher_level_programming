@@ -10,16 +10,13 @@ if __name__ == "__main__":
     load_from_json_file = \
         __import__('6-load_from_json_file').load_from_json_file
 
-    class Run:
+    filename = "add_item.json"
+    try:
+        arg_list = load_from_json_file(filename)
+    except FileNotFoundError:
         arg_list = []
-
-        def __init__(self):
-            self.arg_list.extend(sys.argv[1:])
-            filename = "add_item.json"
-            save_to_json_file(self.arg_list, filename)
-
-            self.arg_list = load_from_json_file(filename)
-    a = Run()
+    arg_list.extend(sys.argv[1:])
+    save_to_json_file(arg_list, filename)
 
 """ALTERNATE METHOD
 import os
