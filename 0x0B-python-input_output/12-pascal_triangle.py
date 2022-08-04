@@ -29,6 +29,7 @@ def pascal_triangle(n):
         count = len(sub) + 1
     return lister
 
+
 """ALTERNATE METHOD
 def pascal_triangle(n):
     if n <= 0:
