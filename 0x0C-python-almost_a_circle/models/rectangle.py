@@ -8,7 +8,7 @@ from models.base import Base
 class Rectangle(Base):
     """The Rectangle class inherits from the base class
     and it defines a rectangle with its properties
-    
+
     Attributes:
         __width (int): width
         __height (int): height
@@ -20,6 +20,7 @@ class Rectangle(Base):
         self.__height = height
         self.__x = x
         self.__y = y
+        super().__init__(id)
 
     @property
     def width(self):
@@ -59,8 +60,8 @@ class Rectangle(Base):
             if value < 0:
                 raise ValueError("height must be >= 0")
             self.__x = value
-      
-   @property
+
+    @property
     def y(self):
         return self.__x
 
