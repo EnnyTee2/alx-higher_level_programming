@@ -3,7 +3,7 @@
 class Base:
     """This class forms the base of all other classes for this project.
     It'll help manage the instance attribute id
-    
+
     Attributes:
         __nb_objects (int): The number of instances of Bases
     """
