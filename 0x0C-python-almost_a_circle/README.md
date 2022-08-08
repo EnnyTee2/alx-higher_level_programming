@@ -1,7 +1,7 @@
 # 0x0C. Python - Almost a circle
-This project reviews everything about the following python subjects:
+This project reviews and contains the usage of the following python subjects:
 
-** * Import
+* Import
 * Exceptions
 * Class
 * Private attribute
@@ -10,4 +10,4 @@ This project reviews everything about the following python subjects:
 * Static method
 * Inheritance
 * Unittest
-* Read/Write file**
+* Read/Write file
