@@ -13,4 +13,3 @@ class Base:
         else:
             Base.__nb_objects += 1
             Base.id = Base.__nb_objects
-            print(Base.__nb_objects)
