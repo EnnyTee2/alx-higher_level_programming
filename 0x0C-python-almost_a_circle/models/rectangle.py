@@ -121,7 +121,7 @@ class Rectangle(Base):
                 - 5th argument represents y attribute
             **kwargs (dict): New key/value pairs of attributes.
         """
-        if args != None:
+        if args is not None:
             try:
                 self.id = args[0]
                 self.width = args[1]
@@ -130,7 +130,7 @@ class Rectangle(Base):
                 self.y = args[4]
             except Exception as e:
                 error = e
-        if kwargs != None:
+        if kwargs is not None:
             for key, value in kwargs.items():
                 setattr(self, key, value)
 
