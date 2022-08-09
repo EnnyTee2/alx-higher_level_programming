@@ -101,5 +101,5 @@ class Rectangle(Base):
             print("")
             return
          for x in range(self.height):
-                print('#' * self.width)
+                print('#'*self.width)
                  
