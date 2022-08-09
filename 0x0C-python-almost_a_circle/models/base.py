@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Defines a base class."""
+
 
 class Base:
     """This class forms the base of all other classes for this project.
@@ -12,6 +14,7 @@ class Base:
 
     def __init__(self, id=None):
         """Initializes a new base
+
         Args:
             id (int): The identity of the new Base (object)
         """
