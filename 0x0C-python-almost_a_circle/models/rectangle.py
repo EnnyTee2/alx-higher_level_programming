@@ -99,6 +99,10 @@ class Rectangle(Base):
         instance with the character #"""
         for x in range(self.height):
             print('#'*self.width)
+    def __str__(self):
+        """Return the print() and str() representation of the Rectangle."""
+        return f"[Rectangle] ({self.id}) {self.x}/{self.y}\
+        - {self.width}/{self.height}"
 
     def update(self, *args, **kwargs):
         """Update the Rectangle.
@@ -154,7 +158,3 @@ class Rectangle(Base):
             "x": self.x,
             "y": self.y
         }
-
-   def __str__(self):
-        return f"[Rectangle] ({self.id}) {self.x}/{self.y}\
-        - {self.width}/{self.height}"
