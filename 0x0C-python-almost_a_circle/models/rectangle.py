@@ -2,6 +2,7 @@
 """Implements a Rectangle based on the Base class"""
 from models.base import Base
 
+
 class Rectangle(Base):
     """The Rectangle class inherits from the base class
     and it defines a rectangle with its properties
@@ -95,10 +96,9 @@ class Rectangle(Base):
 
     def display(self):
         """prints in stdout the Rectangle instance with the character #"""
-
         if self.width == 0 or self.height == 0:
             print("")
-            return
+            return  None
          for x in range(self.height):
                 print('#'*self.width)
                  
