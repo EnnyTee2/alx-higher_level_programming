@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 """Implements a Rectangle based on the Base class"""
-
-
 from models.base import Base
 
 
@@ -16,6 +14,20 @@ class Rectangle(Base):
         __y (int): position_y
     """
     def __init__(self, width, height, x=0, y=0, id=None):
+        """Initialize a new Rectangle object.
+        
+        Args:
+            width (int): The width of the new Rectangle.
+            height (int): The height of the new Rectangle.
+            x (int): The x coordinate of the new Rectangle.
+            y (int): The y coordinate of the new Rectangle.
+            id (int): The identity of the new Rectangle.
+        Raises:
+            TypeError: If either of width or height is not an int.
+            ValueError: If either of width or height <= 0.
+            TypeError: If either of x or y is not an int.
+            ValueError: If either of x or y < 0.
+        """
         self.__width = width
         self.__height = height
         self.__x = x
@@ -24,6 +36,7 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        """Set/get the width of the Rectangle."""
         return self.__width
 
     @width.setter
@@ -37,6 +50,7 @@ class Rectangle(Base):
 
     @property
     def height(self):
+        """Set/get the height of the Rectangle."""
         return self.__height
 
     @height.setter
@@ -50,6 +64,7 @@ class Rectangle(Base):
 
     @property
     def x(self):
+        """Set/get the x - position of the Rectangle."""
         return self.__x
 
     @x.setter
@@ -63,6 +78,7 @@ class Rectangle(Base):
 
     @property
     def y(self):
+        """Set/get the y - position of the Rectangle."""
         return self.__x
 
     @y.setter
