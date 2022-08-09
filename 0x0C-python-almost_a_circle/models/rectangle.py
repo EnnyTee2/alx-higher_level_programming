@@ -109,25 +109,19 @@ class Rectangle(Base):
             f' - {self.width}/{self.height}'
         )
 
-    def update(self, *args):
-        """Update the Rectangle.
-        Args:
-            *args (ints): New attribute values.
-                - 1st argument represents id attribute
-                - 2nd argument represents width attribute
-                - 3rd argument represent height attribute
-                - 4th argument represents x attribute
-                - 5th argument represents y attribute
-            **kwargs (dict): New key/value pairs of attributes.
-        """
-        try:
-            self.id = args[0]
-            self.width = args[1]
-            self.height = args[2]
-            self.x = args[3]
-            self.y = args[4]
-        except Exception as e:
-            error = e
+    def update(self, *args, **kwargs):
+        if args != None:
+            try:
+                self.id = args[0]
+                self.width = args[1]
+                self.height = args[2]
+                self.x = args[3]
+                self.y = args[4]
+            except Exception as e:
+                error = e
+        if kwargs != None:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
 
     def to_dictionary(self):
         """Return the dictionary representation of a Rectangle."""
