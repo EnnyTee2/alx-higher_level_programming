@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Implements a Rectangle based on the Base class"""
 from models.base import Base
-
+import sys
 
 class Rectangle(Base):
     """The Rectangle class inherits from the base class
@@ -93,3 +93,9 @@ class Rectangle(Base):
     def area(self):
         """Return the area of the Rectangle."""
         return self.width * self.height
+
+    def display(self):
+        """ prints in stdout the Rectangle instance with the character #"""
+         for x in range(self.height):
+                print('#'*self.width, file=sys.stdout)
+                 
