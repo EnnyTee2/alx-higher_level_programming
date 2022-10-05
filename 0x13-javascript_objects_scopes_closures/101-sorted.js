@@ -4,7 +4,8 @@ let newDict = {};
 for (let key in dict) {
   if (newDict[dict[key]] === undefined) {
     newDict[dict[key]] = [key];
-  } else {
+  } 
+  else {
     newDict[dict[key]].push(key);
   }
 }
