@@ -5,7 +5,7 @@ import sys
 
 try:
     # We connect to a database and create an instance of it to be used in our code
-    db_con = MySQLdb.connect(
+    db_con = mdb.connect(
         host = 'localhost', 
         user = sys.argv[1], 
         passwd = sys.argv[2], 
